@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SELL_BUY" />
+        <activity android:name=".SELL"
+            android:label="@string/category_SELL">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".BUY" />
+        <activity android:name=".profile_page">
+
+        </activity>
     </application>
 
 </manifest>

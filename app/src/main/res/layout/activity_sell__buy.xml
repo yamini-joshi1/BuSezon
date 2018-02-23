@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mansi.busezon.SELL_BUY">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background"
+        android:orientation="vertical"
+        tools:context="com.example.android.miwok.MainActivity">
+        <Button
+            android:id ="@+id/push_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="PROFILE"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:layout_margin="16dp"
+            android:onClick="sendMessage"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/buy"
+                style="@style/CategoryStyle"
+                android:background="@color/category_orange"
+                android:gravity="center"
+                android:text="BUY"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/sell"
+                style="@style/CategoryStyle"
+                android:gravity="center"
+                android:background="@color/category_orange"
+                android:text="SELL"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
