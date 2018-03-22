@@ -14,8 +14,13 @@
         android:orientation="vertical"
         android:id="@+id/category">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible"
         android:text="ADD PRODUCT"
         android:layout_margin="20dp"
         android:textColor="#020202"
@@ -24,6 +29,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:text="product name"
         android:layout_margin="10dp"
         android:textStyle="italic"
@@ -45,6 +51,7 @@
         <Spinner
             android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
             android:text="category"
             android:entries="@array/array_name">
         </Spinner>
@@ -57,11 +64,13 @@
             android:layout_margin="16dp"
             android:layout_below="@+id/category">
          
-           <Button android:layout_height="wrap_content"
+           <Button
+            android:id="@+id/buttonLoadPicture"
+            android:layout_height="wrap_content"
+            android:onClick="pickAImage"
             android:layout_width="match_parent"
             android:text="SELECT PHOTOS"
             android:background="#009688"
-            android:id="@+id/btnSelectPhoto"
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_below="@+id/category" />
@@ -69,15 +78,29 @@
                 android:id="@+id/ivImage"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="8dp"
                 android:layout_gravity="center"
-                android:src="@drawable/cam" />
+                android:src="@drawable/camera" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
                 android:text="SUBMIT"
                 android:background="#009688"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="16dp"
                 android:layout_gravity="center"/>
-        </LinearLayout>
+            <Button
+                android:id="@+id/show_selected_picture_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show User Selected Picture"/>
+            <ImageView
+                android:id="@+id/display_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></ImageView>
+
+                </LinearLayout>
 </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

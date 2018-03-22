@@ -6,6 +6,7 @@
     <string name="category_SELL">SELL</string>
     <string name="category_profile">PROFILE</string>
 
+
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_BUY">BUY</string>
             <string-array name="array_name">
