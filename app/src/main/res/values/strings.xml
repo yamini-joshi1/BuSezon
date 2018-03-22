@@ -1,3 +1,19 @@
 <resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">BuSezon</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_SELL">SELL</string>
+    <string name="category_profile">PROFILE</string>
+
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_BUY">BUY</string>
+            <string-array name="array_name">
+                <item>FASHION</item>
+                <item>ELECTRONICS</item>
+                <item>HOME AND KITCHEN</item>
+                <item>BOOKS</item>
+                <item>SPORTS</item>
+            </string-array>
 </resources>
