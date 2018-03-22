@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mansi.busezon">
+    <!-- This xml is used to add read file permission from external storage such as sdcard -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +22,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeActivity"
+
+            android:parentActivityName=".MainActivity"
+
+            android:label="Home">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SELL_BUY" />
+        <activity
+            android:name=".SELL"
+            android:label="@string/category_SELL">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".BUY"
+            android:label="@string/category_BUY">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".profile_page"
+            android:label="@string/category_profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SELL_BUY" />
+    </activity>
+
+    <activity android:name=".Add_product">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
     </application>
 
 </manifest>
